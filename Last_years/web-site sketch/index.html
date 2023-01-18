@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <input type="checkbox" id="nav-toggle" hidden>
+
+  <nav class="nav">
+
+      <label for="nav-toggle" class="nav-toggle" onclick></label>
+
+      <ul>
+          <li><a href="index2.html">CSS</a>
+          <li><a href="index3.html">HTML</a>
+          <li><a href="#3">PHP</a>
+          <li><a href="#4">CMS</a>
+          <li><a href="#5">Плагин</a>
+          <li><a href="#6">Контакты</a>
+          <li><a href="#7">Язык</a>
+          <li><a href="#7">Местоположение</a>
+      </ul>
+  </nav>
+    <header>
+      <div class="header_line-1">
+        <div class="header_line-1-top">
+          <ul class="header_line-1-list">
+            <li class="header_line-1-list-all header_line-1-list-all-for-media"><a class="header_line-1-list-all" href="#">Контакты</a></li>
+            <li class="header_line-1-list-all header_line-1-list-all-for-media header_line-1-list-all-palochki"></li>
+            <li class="header_line-1-list-all header_line-1-list-all-for-media"><a class="header_line-1-list-all" href="index3.html">Язык</a></li>
+            <li class="header_line-1-list-all header_line-1-list-all-for-media header_line-1-list-all-palochki"></li>
+            <li class="header_line-1-list-all header_line-1-list-all-for-media header_line-1-list-all-for-location"><img class="header_line-1-list-all-location-photo" src="location.png" alt=""><a class="header_line-1-list-all" href="#"> Местоположение</a></li>
+            <li class="header_line-1-list-all header_line-1-list-all-for-media header_line-1-list-all-palochki"></li>
+            <li class="header_line-1-list-all header_line-1-list-all-for-strelka-vniz"><a class="header_line-1-list-all-1" href="index.html">Вход/регистрация<img class="header_line-1-list-all-strelka-vniz-photo" src="strelka-vniz.png" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header_line-2">
+        <div class="header_line-2-forms">
+          <div class="header_line-2-two-forms">
+            <form action="formdata" method="post" name="form1">
+             <select  class="header_line-2-form-1" name="list1" autofocus>
+              <option>Товар</option>
+              <option>Option</option>
+              <option>Textarea</option>
+              <option>Label</option>
+              <option>Fieldset</option>
+              <option>Legend</option>
+             </select>
+            </form>
+            <form action="/search/" target="_blank" class="form-search">
+              <input type="hidden" name="searchid" value="808327">
+              <input type="search" name="text" required placeholder="Поиск продуктов/участников">
+              <input style="width: 35px;" type="submit" value="&#128269;">
+            </form>
+          </div>
+          <div class="header_line-2-like-korzina">
+            <ul class="header_line-2-korzina-all">
+              <li class="header_line-2-korzina-all-1-2"><img class="header_line-2-korzina-photos" src="korzina.png" alt=""></li>
+              <li class="header_line-2-korzina-all-1-2 header_line-2-korzina-all-1-2-text">Корзина</li>
+              <li class="header_line-2-korzina-all-1-2"><img class="header_line-2-korzina-photos" src="like.png" alt=""></li>
+              <li class="header_line-2-korzina-all-1-2 header_line-2-korzina-all-1-2-text">Избранное</li>
+            </ul>
+          </div>
+          <div class="header_line-2-bottom">
+            <p>Продать</p>
+          </div>
+        </div>
+      </div>
+      <div class="header_line-3">
+          <ul class="header_line-3-list-all">
+            <li class="header_line-3-list-text">CSS</li>
+            <li class="header_line-3-list-text">HTML</li>
+            <li class="header_line-3-list-text">PHP</li>
+            <li class="header_line-3-list-text">CMS</li>
+            <li class="header_line-3-list-text">Плагин</li>
+          </ul>
+      </div>
+    </header>
+    <!-- первая страничка с новыми продуктами -->
+    <div class="container">
+      <div class="new-products">
+        <div class="">
+          <p class="new-products-text">Новые продукты</p>
+        </div>
+        <div class="new-products-products">
+          <div class="container">
+
+<div class="slider">
+<div class="slider__wrapper">
+
+<div class="slider__item">
+<div class="slider__content">
+  <div class="new-product-one">
+             <img class="new-product-photo" src="photo-1.jpeg" alt="">
+             <div class="new-product-description">
+               <p class="new-product-description-text-one">Тест</p>
+               <p class="new-product-description-text-two">Westsergius</p>
+               <div class="rating-area">
+ 	              <input type="radio" id="star-5" name="rating" value="5">
+ 	              <label for="star-5" title="Оценка «5»"></label>
+ 	              <input type="radio" id="star-4" name="rating" value="4">
+ 	              <label for="star-4" title="Оценка «4»"></label>
+ 	              <input type="radio" id="star-3" name="rating" value="3">
+ 	              <label for="star-3" title="Оценка «3»"></label>
+ 	              <input type="radio" id="star-2" name="rating" value="2">
+ 	              <label for="star-2" title="Оценка «2»"></label>
+ 	              <input type="radio" id="star-1" name="rating" value="1">
+ 	              <label for="star-1" title="Оценка «1»"></label>
+               </div>
+               <div class="new-product-description-bottom">
+                 <p>like0</p>
+                 <p class="new-product-description-bottom-price">100 руб</p>
+               </div>
+             </div>
+           </div>
+</div>
+</div>
+<div class="slider__item">
+<div class="slider__content">
+  <div class="new-product-one">
+              <img class="new-product-photo" src="photo-1.jpeg" alt="">
+              <div class="new-product-description">
+                <p class="new-product-description-text-one">Тест</p>
+                <p class="new-product-description-text-two">Westsergius</p>
+                <div class="rating-area">
+  	              <input type="radio" id="star-5" name="rating" value="5">
+  	              <label for="star-5" title="Оценка «5»"></label>
+  	              <input type="radio" id="star-4" name="rating" value="4">
+  	              <label for="star-4" title="Оценка «4»"></label>
+  	              <input type="radio" id="star-3" name="rating" value="3">
+  	              <label for="star-3" title="Оценка «3»"></label>
+  	              <input type="radio" id="star-2" name="rating" value="2">
+  	              <label for="star-2" title="Оценка «2»"></label>
+  	              <input type="radio" id="star-1" name="rating" value="1">
+  	              <label for="star-1" title="Оценка «1»"></label>
+                </div>
+                <div class="new-product-description-bottom">
+                  <p>like0</p>
+                  <p class="new-product-description-bottom-price">100 руб</p>
+                </div>
+              </div>
+            </div>
+</div>
+</div>
+<div class="slider__item">
+<div class="slider__content">
+  <div class="new-product-one">
+              <img class="new-product-photo" src="photo-1.jpeg" alt="">
+              <div class="new-product-description">
+                <p class="new-product-description-text-one">Тест</p>
+                <p class="new-product-description-text-two">Westsergius</p>
+                <div class="rating-area">
+  	              <input type="radio" id="star-5" name="rating" value="5">
+  	              <label for="star-5" title="Оценка «5»"></label>
+  	              <input type="radio" id="star-4" name="rating" value="4">
+  	              <label for="star-4" title="Оценка «4»"></label>
+  	              <input type="radio" id="star-3" name="rating" value="3">
+  	              <label for="star-3" title="Оценка «3»"></label>
+  	              <input type="radio" id="star-2" name="rating" value="2">
+  	              <label for="star-2" title="Оценка «2»"></label>
+  	              <input type="radio" id="star-1" name="rating" value="1">
+  	              <label for="star-1" title="Оценка «1»"></label>
+                </div>
+                <div class="new-product-description-bottom">
+                  <p>like0</p>
+                  <p class="new-product-description-bottom-price">100 руб</p>
+                </div>
+              </div>
+            </div>
+</div>
+</div>
+<div class="slider__item">
+<div class="slider__content">
+  <div class="new-product-one">
+              <img class="new-product-photo" src="photo-1.jpeg" alt="">
+              <div class="new-product-description">
+                <p class="new-product-description-text-one">Тест</p>
+                <p class="new-product-description-text-two">Westsergius</p>
+                <div class="rating-area">
+  	              <input type="radio" id="star-5" name="rating" value="5">
+  	              <label for="star-5" title="Оценка «5»"></label>
+  	              <input type="radio" id="star-4" name="rating" value="4">
+  	              <label for="star-4" title="Оценка «4»"></label>
+  	              <input type="radio" id="star-3" name="rating" value="3">
+  	              <label for="star-3" title="Оценка «3»"></label>
+  	              <input type="radio" id="star-2" name="rating" value="2">
+  	              <label for="star-2" title="Оценка «2»"></label>
+  	              <input type="radio" id="star-1" name="rating" value="1">
+  	              <label for="star-1" title="Оценка «1»"></label>
+                </div>
+                <div class="new-product-description-bottom">
+                  <p>like0</p>
+                  <p class="new-product-description-bottom-price">100 руб</p>
+                </div>
+              </div>
+            </div>
+</div>
+</div>
+<div class="slider__item">
+<div class="slider__content">
+  <div class="new-product-one">
+              <img class="new-product-photo" src="photo-1.jpeg" alt="">
+              <div class="new-product-description">
+                <p class="new-product-description-text-one">Тест</p>
+                <p class="new-product-description-text-two">Westsergius</p>
+                <div class="rating-area">
+  	              <input type="radio" id="star-5" name="rating" value="5">
+  	              <label for="star-5" title="Оценка «5»"></label>
+  	              <input type="radio" id="star-4" name="rating" value="4">
+  	              <label for="star-4" title="Оценка «4»"></label>
+  	              <input type="radio" id="star-3" name="rating" value="3">
+  	              <label for="star-3" title="Оценка «3»"></label>
+  	              <input type="radio" id="star-2" name="rating" value="2">
+  	              <label for="star-2" title="Оценка «2»"></label>
+  	              <input type="radio" id="star-1" name="rating" value="1">
+  	              <label for="star-1" title="Оценка «1»"></label>
+                </div>
+                <div class="new-product-description-bottom">
+                  <p>like0</p>
+                  <p class="new-product-description-bottom-price">100 руб</p>
+                </div>
+              </div>
+            </div>
+</div>
+</div>
+<div class="slider__item">
+<div class="slider__content">
+  <div class="new-product-one">
+              <img class="new-product-photo" src="photo-1.jpeg" alt="">
+              <div class="new-product-description">
+                <p class="new-product-description-text-one">Тест</p>
+                <p class="new-product-description-text-two">Westsergius</p>
+                <div class="rating-area">
+  	              <input type="radio" id="star-5" name="rating" value="5">
+  	              <label for="star-5" title="Оценка «5»"></label>
+  	              <input type="radio" id="star-4" name="rating" value="4">
+  	              <label for="star-4" title="Оценка «4»"></label>
+  	              <input type="radio" id="star-3" name="rating" value="3">
+  	              <label for="star-3" title="Оценка «3»"></label>
+  	              <input type="radio" id="star-2" name="rating" value="2">
+  	              <label for="star-2" title="Оценка «2»"></label>
+  	              <input type="radio" id="star-1" name="rating" value="1">
+  	              <label for="star-1" title="Оценка «1»"></label>
+                </div>
+                <div class="new-product-description-bottom">
+                  <p>like0</p>
+                  <p class="new-product-description-bottom-price">100 руб</p>
+                </div>
+              </div>
+            </div>
+</div>
+</div>
+</div>
+<a class="slider__control slider__control_left" href="#" role="button"></a>
+<a class="slider__control slider__control_right" href="#" role="button"></a>
+</div>
+
+</div>
+
+<script>
+'use strict';
+var multiItemSlider = (function () {
+
+function _isElementVisible(element) {
+var rect = element.getBoundingClientRect(),
+vWidth = window.innerWidth || doc.documentElement.clientWidth,
+vHeight = window.innerHeight || doc.documentElement.clientHeight,
+elemFromPoint = function (x, y) { return document.elementFromPoint(x, y) };
+if (rect.right < 0 || rect.bottom < 0
+|| rect.left > vWidth || rect.top > vHeight)
+return false;
+return (
+element.contains(elemFromPoint(rect.left, rect.top))
+|| element.contains(elemFromPoint(rect.right, rect.top))
+|| element.contains(elemFromPoint(rect.right, rect.bottom))
+|| element.contains(elemFromPoint(rect.left, rect.bottom))
+);
+}
+
+return function (selector, config) {
+var
+_mainElement = document.querySelector(selector),
+_sliderWrapper = _mainElement.querySelector('.slider__wrapper'),
+_sliderItems = _mainElement.querySelectorAll('.slider__item'),
+_sliderControls = _mainElement.querySelectorAll('.slider__control'),
+_sliderControlLeft = _mainElement.querySelector('.slider__control_left'),
+_sliderControlRight = _mainElement.querySelector('.slider__control_right'),
+_wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width),
+_itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width),
+_html = _mainElement.innerHTML,
+_positionLeftItem = 0,
+_transform = 0,
+_step = _itemWidth / _wrapperWidth * 100,
+_items = [],
+_interval = 0,
+_states = [
+{ active: false, minWidth: 0, count: 1 },
+{ active: false, minWidth: 576, count: 2 },
+{ active: false, minWidth: 992, count: 3 },
+{ active: false, minWidth: 1200, count: 4 },
+],
+_config = {
+isCycling: false,
+direction: 'right',
+interval: 5000,
+pause: true
+};
+
+for (var key in config) {
+if (key in _config) {
+_config[key] = config[key];
+}
+}
+
+_sliderItems.forEach(function (item, index) {
+_items.push({ item: item, position: index, transform: 0 });
+});
+
+var _setActive = function () {
+var _index = 0;
+var width = parseFloat(document.body.clientWidth);
+_states.forEach(function (item, index, arr) {
+_states[index].active = false;
+if (width >= _states[index].minWidth)
+_index = index;
+});
+_states[_index].active = true;
+}
+
+var _getActive = function () {
+var _index;
+_states.forEach(function (item, index, arr) {
+if (_states[index].active) {
+_index = index;
+}
+});
+return _index;
+}
+
+var position = {
+getItemMin: function () {
+var indexItem = 0;
+_items.forEach(function (item, index) {
+if (item.position < _items[indexItem].position) {
+  indexItem = index;
+}
+});
+return indexItem;
+},
+getItemMax: function () {
+var indexItem = 0;
+_items.forEach(function (item, index) {
+if (item.position > _items[indexItem].position) {
+  indexItem = index;
+}
+});
+return indexItem;
+},
+getMin: function () {
+return _items[position.getItemMin()].position;
+},
+getMax: function () {
+return _items[position.getItemMax()].position;
+}
+}
+
+var _transformItem = function (direction) {
+var nextItem;
+if (!_isElementVisible(_mainElement)) {
+return;
+}
+if (direction === 'right') {
+_positionLeftItem++;
+if ((_positionLeftItem + _wrapperWidth / _itemWidth - 1) > position.getMax()) {
+nextItem = position.getItemMin();
+_items[nextItem].position = position.getMax() + 1;
+_items[nextItem].transform += _items.length * 100;
+_items[nextItem].item.style.transform = 'translateX(' + _items[nextItem].transform + '%)';
+}
+_transform -= _step;
+}
+if (direction === 'left') {
+_positionLeftItem--;
+if (_positionLeftItem < position.getMin()) {
+nextItem = position.getItemMax();
+_items[nextItem].position = position.getMin() - 1;
+_items[nextItem].transform -= _items.length * 100;
+_items[nextItem].item.style.transform = 'translateX(' + _items[nextItem].transform + '%)';
+}
+_transform += _step;
+}
+_sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
+}
+
+var _cycle = function (direction) {
+if (!_config.isCycling) {
+return;
+}
+_interval = setInterval(function () {
+_transformItem(direction);
+}, _config.interval);
+}
+
+var _controlClick = function (e) {
+if (e.target.classList.contains('slider__control')) {
+e.preventDefault();
+var direction = e.target.classList.contains('slider__control_right') ? 'right' : 'left';
+_transformItem(direction);
+clearInterval(_interval);
+_cycle(_config.direction);
+}
+};
+
+var _handleVisibilityChange = function () {
+if (document.visibilityState === "hidden") {
+clearInterval(_interval);
+} else {
+clearInterval(_interval);
+_cycle(_config.direction);
+}
+}
+
+var _refresh = function () {
+clearInterval(_interval);
+_mainElement.innerHTML = _html;
+_sliderWrapper = _mainElement.querySelector('.slider__wrapper');
+_sliderItems = _mainElement.querySelectorAll('.slider__item');
+_sliderControls = _mainElement.querySelectorAll('.slider__control');
+_sliderControlLeft = _mainElement.querySelector('.slider__control_left');
+_sliderControlRight = _mainElement.querySelector('.slider__control_right');
+_wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width);
+_itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width);
+_positionLeftItem = 0;
+_transform = 0;
+_step = _itemWidth / _wrapperWidth * 100;
+_items = [];
+_sliderItems.forEach(function (item, index) {
+_items.push({ item: item, position: index, transform: 0 });
+});
+}
+
+var _setUpListeners = function () {
+_mainElement.addEventListener('click', _controlClick);
+if (_config.pause && _config.isCycling) {
+_mainElement.addEventListener('mouseenter', function () {
+clearInterval(_interval);
+});
+_mainElement.addEventListener('mouseleave', function () {
+clearInterval(_interval);
+_cycle(_config.direction);
+});
+}
+document.addEventListener('visibilitychange', _handleVisibilityChange, false);
+window.addEventListener('resize', function () {
+var
+_index = 0,
+width = parseFloat(document.body.clientWidth);
+_states.forEach(function (item, index, arr) {
+if (width >= _states[index].minWidth)
+  _index = index;
+});
+if (_index !== _getActive()) {
+_setActive();
+_refresh();
+}
+});
+}
+
+// инициализация
+_setUpListeners();
+if (document.visibilityState === "visible") {
+_cycle(_config.direction);
+}
+_setActive();
+
+return {
+right: function () {
+_transformItem('right');
+},
+left: function () {
+_transformItem('left');
+},
+stop: function () {
+_config.isCycling = false;
+clearInterval(_interval);
+},
+cycle: function () {
+_config.isCycling = true;
+clearInterval(_interval);
+_cycle();
+}
+}
+
+}
+}());
+
+var slider = multiItemSlider('.slider', {
+isCycling: true
+})
+</script>
+        </div>
+        <div class="">
+          <div class="new-products-bottom-text-">
+            <p class="new-products-bottom-text"><a class="new-products-bottom-text-desine" href="#">Смотреть все </a></p>
+            <img class="new-products-bottom-text-strelka-photo" src="strelka.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

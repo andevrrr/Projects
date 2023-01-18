@@ -1,0 +1,2 @@
+void checkAvail ();
+double date ();

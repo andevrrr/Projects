@@ -1,0 +1,38 @@
+
+/* стили секций с содержанием */
+.section2{
+display: none;
+background-color: grey;
+margin-top: 20px;
+position: relative;
+max-width: 982px;
+height: 300px;
+margin-left: -4px;
+}
+.tabs_2_1 input {
+display: none;
+}
+
+.tabs_2_1 label {
+color: white;
+background-color: #04b56be3;
+padding: 20px;
+margin-left: -4px;
+}
+
+.tabs_2_1 label:hover {
+color: white;
+cursor: pointer;
+background-color: blue;
+}
+
+.tabs_2_1 input:checked + label {
+color: black;
+}
+#tab1_2_1:checked ~ #content1_2_1,
+#tab2_2_1:checked ~ #content2_2_1,
+#tab3_2_1:checked ~ #content3_2_1,
+#tab4_2_1:checked ~ #content4_2_1,
+#tab5_2_1:checked ~ #content5_2_1  {
+display: block;
+}

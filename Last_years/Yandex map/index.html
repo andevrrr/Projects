@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Поиск организаций и геопоиск</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--
+        Укажите свой API-ключ. Тестовый ключ НЕ БУДЕТ работать на других сайтах.
+        Получить ключ можно в Кабинете разработчика: https://developer.tech.yandex.ru/keys/
+    -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=94065b64-7b4d-4a98-adb2-88f7da2b9836" type="text/javascript"></script>
+    <script type="text/javascript">
+
+
+    function init() {
+        var location = ymaps.geolocation;
+        var myMap = new ymaps.Map('map', {
+        center: [55.76, 37.64],
+        zoom: 13
+    });
+
+    // Получение местоположения и автоматическое отображение его на карте.
+    location.get({
+            mapStateAutoApply: true
+        })
+    .then(
+        function(result) {
+            // Получение местоположения пользователя.
+            var userAddress = result.geoObjects.get(0).properties.get('text');
+            var userCoodinates = result.geoObjects.get(0).geometry.getCoordinates();
+            // Пропишем полученный адрес в балуне.
+            result.geoObjects.get(0).properties.set({
+                balloonContentBody: 'Адрес: ' + userAddress +
+                                    '<br/>Координаты:' + userCoodinates
+        });
+            myMap.geoObjects.add(result.geoObjects)
+        },
+        function(err) {
+            console.log('Ошибка: ' + err)
+        }
+    );
+    var searchControl = new ymaps.control.SearchControl({
+        options: {
+            provider: 'yandex#search'
+        }
+    });
+
+        myMap.controls.add(searchControl);
+
+
+        searchControl.search('Питомник');
+    }
+
+
+    ymaps.ready(init);
+    </script>
+    <style>
+          html, body, #map {
+              width: 100%; height: 100%; padding: 0; margin: 0;
+          }
+      </style>
+
+<div id="map"></div>
+</body>
+</html>
