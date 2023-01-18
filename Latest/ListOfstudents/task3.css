@@ -1,0 +1,27 @@
+.student_list{
+  background-color: #deb887;
+}
+
+table,
+td {
+    border: 1px solid;
+}
+
+table {
+    margin-top: 5%;
+    width: 50%;
+    max-height: 100%;
+    display: block;
+    border-spacing: 0;
+}
+
+tr {
+  width: 100%;
+}
+
+td {
+    padding: 5px 10px;
+    border-top-width: 0;
+    border-left-width: 0;
+    width: 50%;
+}

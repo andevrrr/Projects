@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="body_body">
+
+    <div class="header-menu">
+        <button class="menu_btn" onclick="return show1('page1', 'page2', 'page3');" >MAIN</button>
+        <button class="menu_btn" onclick="return show2('page2', 'page1',  'page3');">TABLE DATA</button>
+        <button class="menu_btn" onclick="return show3('page3', 'page1', 'page2');">INFORMATION</button>
+    </div>
+
+    <div id="page1">
+        <div class="header">
+            <div class="image-fader">
+                <div class="text">
+                    <p>Welcome to Tampereen Forecast</p>
+                </div>
+                <img src="https://cdn.pixabay.com/photo/2018/09/09/08/55/architecture-3664142_1280.jpg" />  
+                <img src="https://cdn.pixabay.com/photo/2022/04/18/12/18/tampere-7140357_1280.jpg" />  
+                <img src="https://cdn.pixabay.com/photo/2018/09/09/21/26/architecture-3665576_1280.jpg" />
+                <img src="https://cdn.pixabay.com/photo/2021/05/06/13/35/bridge-6233425_1280.jpg" />
+            </div>
+        </div>
+        <div class="main_contant">
+            <div class="forecast_widget" >
+                <div>
+                    <div class="forecast" id="forecast">
+                        <div class="forecast_top">
+                            <div class="degrees">
+                                <h1>Today's weather in Tampere</h1>
+                                <p id="degree">&#176;</p> 
+                            </div>
+                            <div>
+                                <p id="forecast_time"></p>
+                            </div>
+                        </div>
+                        <div class="discription">
+                            <table>
+                                <tr>
+                                    <td><p>Humidity:</p><p id="humidity"></p></td>
+                                    <td><p>Wind:</p><p id="wind"></p></td>
+                                    <td><p>Light:</p><p id="light"></p></td>
+                                </tr>
+                            </table>
+                            <div class="forecast_bottom">
+                                <img class="sun" id="sun" src="https://cdn-icons-png.flaticon.com/512/869/869869.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242649.05276711736!2d23.55011949824763!3d61.63196753406989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468edf554593da5d%3A0x6adfe3bd1e0b22c0!2sTampere!5e0!3m2!1sen!2sfi!4v1650764189657!5m2!1sen!2sfi" width="450px" height="450" style="border-radius: 50px; border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <div id="page2" style="display: none;">
+        <div class="main_contant">
+            <div class="table_data">
+                <div id="myBtnContainer">
+                    <button  class="btn" style="font-weight: bold;">All</button>
+                    <button  class="btn">Wind speed</button>
+                    <button  class="btn">Temperature</button>
+                    <div class="dropdown">
+                        <button class="dropbtn1">More</button>
+                        <div class="dropdown_content">
+                            <a class="btn">Rain</a>
+                            <a class="btn">Light</a>
+                            <a class="btn">Humidity out</a>
+                            <a class="btn">Humidity in</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown" id="dropdown">
+                    <button class="dropbtn">Interval</button>
+                    <div class="dropdown_content">
+                        <a class="menu" href="#">Live</a>
+                        <a class="menu" href="#">24 hours</a>
+                        <a class="menu" href="#">48 hours</a>
+                        <a class="menu" href="#">72 hours</a>
+                        <a class="menu" href="#">1 week</a>
+                    </div>
+                </div>
+                <div class="tables">
+                    <div class="table">
+                        <table id="showData"></table>
+                    </div>
+                    <div class="table">
+                        <table id="showData2"></table>
+                    </div>
+                </div>
+        
+            </div>
+            <div class="chart" id="chart">
+                <canvas id="myChart"></canvas>
+            </div>
+    
+        </div>
+        
+    </div>
+
+
+    <div id="page3" style="display: none;">
+
+        <div class="main_contant">
+            <div>
+                <div class="about">
+                    <h1>About</h1>
+                    <p>The web-site is the final assignment for the course "Web-Development - 5G00DM03-3005" created by the student of Tampere University of Applied Sciences</p>
+                    <h3>Description</h3>
+                    <p>The data that is being used for displaying the forecast which is constantly coming from the weather station located on the roof of TAMK</p>
+                    <p>Using the web-site, gives information about past and current weather, uncluding humidity, light, rain, etc. </p>
+                </div>
+
+                <div class="copyrights">
+                    <h1>Copyrights</h1>
+                    <p>All pictures that are being used were taken from two sources that give you free permission for personal and commercial purpose.</p>
+                    <div>
+                        <a href="https://pixabay.com/service/license/">Main images</a>
+                        <a  href="https://www.flaticon.com/free-icons/moon" title="moon icons">Moon icons created by Vectors Market - Flaticon</a>
+                        <a href="https://www.flaticon.com/free-icons/sun" title="sun icons">Sun icons created by Freepik - Flaticon</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class= "footer">
+    
+        <div class = "info">
+            <p>Created by</p>
+            <p>Anton Kucherenko</p>
+            <p>anton.kucherenko@tuni.fi</p>
+            <p>Course: 5G00DM03-3005</p>
+
+        </div>      
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

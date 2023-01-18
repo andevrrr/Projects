@@ -1,0 +1,407 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Doing header 
+https://scwcontent.affino.com/AcuCustom/Sitename/DAM/015/Tampere_cookbook_Adobe.jpg
+https://new.visitfinland.com/.imaging/mte/visit-finland-theme/lgUpW/dam/Lakeland/Tampere_Tammerkoski_drone_view_summer_2021_Laura_Vanzo-Visit-Tampere.jpg/jcr:content/Tampere_Tammerkoski_drone_view_summer_2021_Laura_Vanzo%20Visit%20Tampere.jpg
+*/
+
+.header{
+    height: 600px;
+}
+
+.image-fader img{
+    width: 100%;
+    height: 800px;
+    /*background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("https://www.opiskelijantampere.fi/uploaded/section_images/sok/tampereen_opiskelumahdollisuudet/opiskelijan-tampere-opiskelumahdollisuudet-tamk.jpg");*/
+    background-size: cover;
+    animation-delay: 2s;
+}
+
+
+
+image-fader {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .image-fader img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation-name: imagefade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+  }
+  
+  @keyframes imagefade {
+    0% {
+      opacity:1;
+    }
+    17% {
+      opacity:1;
+    }
+    25% {
+      opacity:0;
+    }
+    92% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  .image-fader img:nth-of-type(1) {
+    animation-delay: 6s;
+  }
+  .image-fader img:nth-of-type(2) {
+    animation-delay: 4s;
+  }
+  .image-fader img:nth-of-type(3) {
+    animation-delay: 2s;
+  }
+  .image-fader img:nth-of-type(4) {
+    animation-delay: 0s;
+  }
+
+
+
+
+
+.main_contant{
+    width: 80%;
+    margin: 10%;
+
+}
+
+/* table styling*/
+
+
+#showData, #showData2{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+#page2 table thead tr {
+    background-color: #FF7D5D;
+    color: #ffffff;
+    text-align: left;
+}
+#page2 table th,
+#page2 table td {
+    padding: 12px 15px;
+}
+
+#page2 table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+#page2 table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+#page2 table tbody tr:last-of-type {
+    border-bottom: 2px solid #FF7D5D;
+}
+#page2 table tbody tr.active-row {
+    font-weight: bold;
+    color: #FF7D5D;
+}
+
+#showData{
+    width: 100%;
+    border: 5px;
+
+}
+#showData2{
+    margin-left: 5%;
+    margin-top: 65px;
+
+}
+.tables{
+    display: flex;
+}
+
+.table{
+    flex: 50%;
+}
+
+#myBtnContainer{
+    margin-bottom: 5%;
+}
+#myBtnContainer button{
+    background-color: #FF7D5D;
+    color: #ffffff;
+    padding: 12px 15px;
+    margin: 5px 5px 5px 0;
+    border: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 1300px){
+  #showData2{
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .tables{
+    display: inline;
+  }
+  .table{
+    width: 100%;
+  }
+}
+
+/* dropped down menu*/
+
+
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: #FF7D5D;
+    color: white;
+    padding: 12px 15px;
+    margin: 5px 5px 5px 0;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 83px;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown_content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown_content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown_content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #FF7D5D;
+  }
+
+/* chart styling*/
+
+.chart{
+    margin: auto;
+    width: 90%;
+}
+
+/* footer styling*/
+
+.info{
+    padding: 5%;
+}
+
+.info p{
+    color: aliceblue;
+    font-style:italic;
+    
+}
+
+.footer{
+    background-color: black;
+}
+
+
+
+
+
+/* menu */
+
+.menu_btn{
+    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0));
+    margin-top: 20px;
+    border: 0;
+    font-family: 'Oswald',Arial,sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 13px;
+}
+
+
+.header-menu{
+    animation: anim 2.5s ease-in forwards;
+    z-index: 1;
+    height: 60px;  
+    position: relative;
+    text-align: right;
+    padding-right: 15%;
+    background-color: black;
+}
+
+
+@keyframes anim {
+    0%{
+        transform: translateY(-60px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+
+
+.text p{
+    color: #ffffff;
+    font-size: 100px;
+    font-family: 'Oswald',Arial,sans-serif;
+    line-height: 0.95;
+    font-weight: 700;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    text-align: center;
+    margin-top: 15%;
+    z-index: 1000;
+    position: relative;
+  }
+
+
+  /* forecast page*/
+
+
+.forecast, .forecast_sun{
+  background: none;
+  border-radius: 50px; 
+  padding: 5%;
+  margin-right: 10%;
+}
+
+.forecast_sun{
+  margin-top: 7%;
+  border-radius: 50px; 
+  background: burlywood;
+  
+}
+
+.forecast_top{
+  display: flex;
+}
+.forecast_bottom{
+  width: 100%;
+}
+.sun{
+  width: 60%;
+  margin-left: 40%;
+  margin-top: -10%;
+}
+
+.degrees{
+  margin-right: 20%;
+}
+
+.degrees h1{
+  color: white;
+  font-size: 1.25rem;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+
+#degree, #forecast_time{
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+.discription{
+  display: flex;
+}
+.discription table {
+  width: 100%;
+}
+.discription table tr td p {
+  color: white;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+  font-size: 1rem;
+  margin: 3% 3% 3% 1%;
+  font-weight: 300;
+}
+
+.discription table tr td{
+  display: flex;
+}
+
+
+#humidity, #wind, #light{
+  font-weight: 600;
+}
+
+.discription table tr td {
+  border-top: 1px solid yellow;
+}
+
+.forecast_widget{
+  display: flex;
+}
+
+@media (max-width: 1100px){
+  .forecast{
+    margin-right: 0;
+  }
+  .forecast_widget{
+    display: inline;
+  }
+
+  .map{
+    margin-top: 10%;
+  }
+
+  .map iframe{
+    width: 100%;
+  }
+}
+
+
+/* information page*/
+
+.about h1, .copyrights h1{
+  border-bottom: 2px solid gray;
+}
+
+.about, .copyrights{
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+
+.copyrights a{
+  text-decoration: none;
+  color: rgb(79, 79, 236);
+}
+
+.copyrights div{
+  display: grid;
+}

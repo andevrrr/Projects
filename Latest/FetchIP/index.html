@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data transfer demo</title>
+    <script src="transfer.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="transfer.css">
+</head>
+<body>
+
+    <button type="button" onclick="getData0()">Get some Ajax data dynamically</button>
+    <div id="data0"></div>
+
+    <button type="button" onclick="getData1()">Get some data using jquery ajax method</button>
+    <div id="data1"></div>
+
+    <button type="button" onclick="getData2()">Get some data using Fetch API!</button>
+    <div id="data2"></div>
+
+    <button type="button" onclick="getData3()">Get some data using Fetch API!</button>
+    <div id="data3"></div>
+
+    <button type="button" onclick="postDataButtonHandler()">Post a new student!</button>
+    <div id="data4"></div>
+    
+</body>
+</html>
